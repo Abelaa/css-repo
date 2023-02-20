@@ -1,0 +1,135 @@
+
+/* Global Variables */
+:root {
+    --overlay: rgba(0,0,0,0.54)
+}
+
+/* Border Box reset */
+*,
+*:before,
+*:after 
+{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+header {
+    background: url('https://f8n-production.imgix.net/creators/profile/eeluhqipv-banner-yatreda-jpg-8vp0oz.jpg?auto=format%2Ccompress&q=70&max-h=340&max-w=2000&fit=crop');
+    background-size: cover;
+    background-position: center center;
+    height: 240px;
+    color: white;
+}
+
+.header-overlay {
+    height: 100%;
+    width: 100%;
+    background: var(--overlay);
+    padding: 10px 20px;
+}
+
+nav {
+    margin: 0 150px;
+}
+
+.user-profile {
+    display: inline-block;
+    border-radius: 1000px;
+    background-color: white;
+    position: relative;
+    top: -95px;
+    left: 150px;
+}
+
+.img-rounded {
+    padding: 15px;
+    border-radius: 1000px;
+    width: 180px;
+}
+
+main {
+    width: 1600px;
+    margin: -70px auto 100px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 24rem;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
+}
+
+video {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.left {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.right {
+    color: rgb(192, 184, 184);
+    font-weight: 500;
+}
+
+.buy {
+    color: rgb(192, 184, 184);
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+}
+
+.user {
+    color: black;
+    font-weight: 700;
+}
+
+.small-profile {
+    align-self: center;
+    margin-right: 4px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+.left-column > * {
+    margin-bottom: 20px;
+}
+
+.short-p {
+    width: 500px;
+}
+
+button {
+    border-radius: 30px !important;
+    margin-right: 8px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);;
+}
+
+.search-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 25px;
+    border-radius: 50px;
+    border: none;
+}
+
+.connect-button {
+    padding: 12px 0px; 
+    min-width: 50px; 
+    font-weight: bold; 
+    color: black;
+}
